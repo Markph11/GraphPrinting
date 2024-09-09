@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="styles2.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+<body>
+<div class="container">
+
+  <!-- Nav Toggle Button -->
+<button class="nav-toggle" id="navToggle">&#9776;</button>
+
+<aside class="sidebar">
+<div class="logo">
+<img src="Image/logo.png" alt="Logo" class="logo-img">
+<h2>Graph Printing (POS)</h2>
+</div>
+
+<nav class="menu">
+  <ul>
+      <li class="menu-header">Main</li>
+      <li><a href="#" class="icon"><span class="icon">👤</span> Admin Dashboard</a></li>
+  </ul>
+
+  <ul>
+      <li class="menu-header">User Management</li>
+      <li><a href="#"><span class="icon">👥</span> Users</a></li>
+      <li><a href="#"><span class="icon">🛠</span> Roles & Permissions</a></li>
+      <li><a href="#"><span class="icon">🔒</span> Deleted Accounts</a></li>
+  </ul>
+
+  <ul>
+      <li class="menu-header">Inventory Management</li>
+      <li><a href="#"><span class="icon">📦</span> Products</a></li>
+      <li><a href="#"><span class="icon">📝</span> Create Products</a></li>
+      <li><a href="#"><span class="icon">📊</span> Inventory Reports</a></li>
+  </ul>
+
+  <ul>
+    <li class="menu-header">Sales</li>
+    <li><a href="#"><span class="icon">🛒</span> Point of Sales</a></li>
+</ul>
+
+
+  <ul>
+      <li class="menu-header">Settings</li>
+      <li><a href="#"><span class="icon">⚙️</span> General Settings</a></li>
+      <li><a href="#"><span class="icon">🔓</span> Logout</a></li>
+  </ul>
+</nav>
+</aside>
+
+<main class="main-content">
+  <header class="header">
+    <div class="header-left">
+        <h1>Admin Dashboard</h1>
+    </div>
+    <div class="header-right">
+        <div class="profile">
+            <img src="Image/admin logo.png" alt="Profile" class="profile-img">
+            <button class="profile-button" id="profileButton">Profile ▼</button>
+            <div class="profile-menu" id="profileMenu">
+                <a href="#">View Profile</a>
+                <a href="#">Edit Profile</a>
+                <a href="home.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<section class="stats">
+<div class="stat-item">
+<div class="stat-number">20</div>
+<div class="stat-label">Customers</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">30</div>
+<div class="stat-label">Purchase</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">50</div>
+<div class="stat-label">Suppliers</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">60</div>
+<div class="stat-label">Sales</div>
+</div>
+</section>
+
+<section class="recent-products">
+<h2>Recent Products</h2>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>Product</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Trucker's Hat</td>
+<td>₱120.00</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Colored Ballpen</td>
+<td>₱50.00</td>
+</tr>
+<tr>
+<td>3</td>
+<td>White Mugs</td>
+<td>₱60.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Bamboo Ballpen</td>
+<td>₱100.00</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="recent-tshirt-sales">
+<h2>Recent T-shirt Design Sales</h2>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>Product</th>
+<th>Sales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>T-shirt Design A</td>
+<td>10</td>
+</tr>
+<tr>
+<td>2</td>
+<td>T-shirt Design B</td>
+<td>20</td>
+</tr>
+<tr>
+<td>3</td>
+<td>T-shirt Design C</td>
+<td>30</td>
+</tr>
+<tr>
+<td>4</td>
+<td>T-shirt Design D</td>
+<td>40</td>
+</tr>
+<tr>
+<td>5</td>
+<td>T-shirt Design E</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
+
+<section class="sales-chart">
+  <h2>Purchase & Sales</h2>
+  <canvas id="salesChart" width="300" height="100"></canvas>
+</section>
+
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
